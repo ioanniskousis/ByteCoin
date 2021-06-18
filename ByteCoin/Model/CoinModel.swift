@@ -10,11 +10,11 @@ import Foundation
 
 struct CoinModel {
     let time: String
-    let asset_id_base: String
-    let asset_id_quote: String
+    let base: String
+    let quote: String
     let rate: Double
     
     var rateString: String {
-        return String(format: "%.4f", rate)
+        return String(format: "%.2f", rate)
     }
 }
